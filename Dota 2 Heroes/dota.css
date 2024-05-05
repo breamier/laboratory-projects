@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    margin: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 40px;
+}
+
+h2 {
+    margin: 25px;
+    font-size: 250%;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img[alt="Logo"] {
+    width: 100px;
+}
+
+ul {
+    display: inline-block;
+}
+
+#banner {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: grey;
+    color: black;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.glow {
+    font-size: 250%;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.navbar {
+    background-color: antiquewhite;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    color: black;
+    z-index: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #397cfa, 0 0 40px #397cfa, 0 0 50px #397cfa, 0 0 60px #1261f3, 0 0 70px #1261f3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #397cfa, 0 0 40px #397cfa, 0 0 50px #397cfa, 0 0 60px #397cfa, 0 0 70px #397cfa, 0 0 80px #397cfa;
+    }
+}
